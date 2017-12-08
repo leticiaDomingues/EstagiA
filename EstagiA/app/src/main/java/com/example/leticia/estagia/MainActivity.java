@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
@@ -16,13 +17,31 @@ public class MainActivity extends Activity implements View.OnClickListener {
         //set up a click listener for the login button.
         View btnRegister = findViewById(R.id.btnLogin);
         btnRegister.setOnClickListener(this);
+
+        //set up a click listener for the signup button.
+        View btnSignUp = findViewById(R.id.btnCadastrar);
+        btnSignUp.setOnClickListener(this);
     }
 
     public void onClick(View v) {
         final Context context = getApplicationContext();
 
         if(v.getId() == R.id.btnLogin) {
-            //display the login activity
+            String login = ((EditText)findViewById(R.id.txtRaCpf)).getText().toString();
+            String senha = ((EditText)findViewById(R.id.txtSenha)).getText().toString();
+
+            if(!login.equals("") && !senha.equals("")) {
+                Intent i = new Intent(this, SignUpActivity.class);
+
+                Bundle extraInfo = new Bundle();
+                extraInfo.putString("login", login);
+                extraInfo.putString("senha", senha);
+                i.putExtras(extraInfo);
+
+                startActivity(i);
+            }
+        } else if(v.getId() == R.id.btnCadastrar) {
+            //display the signup activity
             Intent i = new Intent(this, SignUpActivity.class);
             startActivity(i);
         }

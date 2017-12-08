@@ -4,4 +4,11 @@
     <string name="signup_button">Cadastrar</string>
     <string name="ra_cpf_label">R.A. ou CPF</string>
     <string name="password_label">Senha</string>
+    <string name="name_label">Nome completo</string>
+    <string name="ra_label">R.A.</string>
+    <string name="email_label">Email - exemplo@dominio.com</string>
+    <string name="password_confirmation_label">Confirme sua senha</string>
+    <string name="bcc_radio">BCC</string>
+    <string name="enc_radio">EnC</string>
+    <string name="send_request_button">Enviar solicitação</string>
 </resources>
