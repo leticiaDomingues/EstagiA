@@ -1,19 +1,18 @@
 package com.example.leticia.estagia;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.content.Intent;
+import android.view.View;
 
-
-public class DashboardActivity extends Activity implements View.OnClickListener {
+public class OpportunitiesActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
+        setContentView(R.layout.activity_opportunities);
 
     }
 

@@ -21,6 +21,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
         //set up a click listener for the signup button.
         View btnSignUp = findViewById(R.id.btnCadastrar);
         btnSignUp.setOnClickListener(this);
+
+        //set up a click listener for the signup button.
+        View txtRecoverPassword = findViewById(R.id.txtRecoverPassword);
+        txtRecoverPassword.setOnClickListener(this);
     }
 
     public void onClick(View v) {
@@ -30,19 +34,23 @@ public class MainActivity extends Activity implements View.OnClickListener {
             String login = ((EditText)findViewById(R.id.txtRaCpf)).getText().toString();
             String senha = ((EditText)findViewById(R.id.txtSenha)).getText().toString();
 
-            if(!login.equals("") && !senha.equals("")) {
-                Intent i = new Intent(this, SignUpActivity.class);
+            Intent i = new Intent(this, DashboardActivity.class);
 
+            if(!login.equals("") && !senha.equals("")) {
                 Bundle extraInfo = new Bundle();
                 extraInfo.putString("login", login);
                 extraInfo.putString("senha", senha);
                 i.putExtras(extraInfo);
-
-                startActivity(i);
             }
+
+            startActivity(i);
         } else if(v.getId() == R.id.btnCadastrar) {
             //display the signup activity
             Intent i = new Intent(this, SignUpActivity.class);
+            startActivity(i);
+        } else if(v.getId() == R.id.txtRecoverPassword) {
+            //display the signup activity
+            Intent i = new Intent(this, RecoverPasswordActivity.class);
             startActivity(i);
         }
     }

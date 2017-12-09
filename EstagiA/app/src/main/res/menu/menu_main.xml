@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="match_parent">
+    <item android:id="@+id/myProfile"
+        android:orderInCategory="100"
+        android:title="@string/my_profile_item"/>
+    <item android:id="@+id/opportunities"
+        android:orderInCategory="100"
+        android:title="@string/opportunities_item" />
+    <item android:id="@+id/events"
+        android:orderInCategory="100"
+        android:title="@string/events_item" />
+    <item android:id="@+id/exit"
+        android:orderInCategory="100"
+        android:title="@string/exit_item" />
+</menu>

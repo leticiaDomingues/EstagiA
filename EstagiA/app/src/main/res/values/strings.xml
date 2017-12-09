@@ -11,4 +11,11 @@
     <string name="bcc_radio">BCC</string>
     <string name="enc_radio">EnC</string>
     <string name="send_request_button">Enviar solicitação</string>
+    <string name="recover_password_button">Recuperar senha</string>
+    <string name="forgot_password_label"><u>Esqueceu sua senha?</u></string>
+    <string name="my_profile_item">Meu perfil</string>
+    <string name="opportunities_item">Oportunidades</string>
+    <string name="events_item">Eventos</string>
+    <string name="student_dashboard_item">Minha dashboard</string>
+    <string name="exit_item">Sair</string>
 </resources>
