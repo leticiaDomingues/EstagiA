@@ -1,12 +1,196 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+    <TextView
+        android:id="@+id/myProfileLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="Meu perfil"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:textSize="25sp"/>
+    <TextView
+        android:id="@+id/profileInfoLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/profile_info_label"
+        android:layout_below="@id/myProfileLabel"/>
+
+    <EditText
+        android:id="@+id/txtNome"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:hint="@string/name_label"
+        android:lines="1"
+        android:textSize="15sp"
+        android:layout_below="@id/profileInfoLabel"/>
+    <EditText
+        android:id="@+id/txtRa"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:hint="@string/ra_label"
+        android:lines="1"
+        android:textSize="15sp"
+        android:layout_below="@id/txtNome"/>
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:hint="@string/email_label"
+        android:lines="1"
+        android:textSize="15sp"
+        android:ellipsize="start"
+        android:layout_below="@id/txtRa"/>
+    <EditText
+        android:id="@+id/txtSenha"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:hint="@string/password_label"
+        android:lines="1"
+        android:textSize="15sp"
+        android:ellipsize="start"
+        android:layout_below="@id/txtEmail"/>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:id="@+id/radio_major"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtSenha"
+        android:gravity="center_horizontal">
+        <RadioButton android:id="@+id/radio_bcc"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/bcc_radio"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_enc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enc_radio"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
 
     <TextView
-        android:id="@+id/txtRecoverPassword"
+        android:id="@+id/txtOpportunities"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:gravity="center"
-        android:text="Meu perfil"/>
-</LinearLayout>
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/radio_major"
+        android:text="@string/opportunities_label"/>
+    <ImageView
+        android:id="@+id/imgGoogle"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/logo_google"
+        android:layout_below="@id/txtOpportunities"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/txtGoogleInfo" />
+    <TextView
+        android:id="@+id/txtGoogleInfo"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/txtOpportunities"
+        android:text="Blabla google asdasd"
+        android:layout_alignParentRight="true"/>
+    <ImageView
+        android:id="@+id/imgApple"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:src="@drawable/logo_apple"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/imgGoogle"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/txtAppleInfo" />
+    <TextView
+        android:id="@+id/txtAppleInfo"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/txtGoogleInfo"
+        android:text="Apple blablablla"
+        android:layout_alignParentRight="true"/>
+    <ImageView
+        android:id="@+id/imgMicrosoft"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:src="@drawable/logo_microsoft"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/imgApple"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/txtMicrosoftInfo" />
+    <TextView
+        android:id="@+id/txtMicrosoftInfo"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/txtAppleInfo"
+        android:text="Microsoft blablablla"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/txtEvents"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/imgMicrosoft"
+        android:text="@string/events_label"/>
+        <ImageView
+            android:id="@+id/imgSpotify"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:src="@drawable/logo_spotify"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/txtEvents"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/txtSpotifyInfo" />
+        <TextView
+            android:id="@+id/txtSpotifyInfo"
+            android:layout_width="240dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:layout_below="@id/txtEvents"
+            android:text="Palestra Spotify no auditório 1 blablablla"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:id="@+id/imgItau"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:src="@drawable/logo_itau"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/imgSpotify"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/txtItauInfo" />
+        <TextView
+            android:id="@+id/txtItauInfo"
+            android:layout_width="240dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_vertical"
+            android:layout_below="@id/txtSpotifyInfo"
+            android:text="Palestra Itaú no auditório 1 blablablla"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

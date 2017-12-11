@@ -15,6 +15,9 @@
     <string name="forgot_password_label"><u>Esqueceu sua senha?</u></string>
     <string name="my_profile_item">Meu perfil</string>
     <string name="opportunities_item">Oportunidades</string>
+    <string name="opportunities_label"><b>Oportunidades inscritas</b></string>
+    <string name="profile_info_label"><b>Informações de perfil</b></string>
+    <string name="events_label"><b>Eventos inscritos</b></string>
     <string name="events_item">Eventos</string>
     <string name="student_dashboard_item">Minha dashboard</string>
     <string name="exit_item">Sair</string>
