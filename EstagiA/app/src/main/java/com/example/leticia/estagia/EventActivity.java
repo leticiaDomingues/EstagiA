@@ -1,28 +1,19 @@
 package com.example.leticia.estagia;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
 
-public class OpportunitiesActivity extends Activity implements View.OnClickListener {
+public class EventActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_opportunities);
+        setContentView(R.layout.activity_event);
 
-        //set up click listeners
-        findViewById(R.id.google).setOnClickListener(this);
-        findViewById(R.id.apple).setOnClickListener(this);
-        findViewById(R.id.microsoft).setOnClickListener(this);
-        findViewById(R.id.amazon).setOnClickListener(this);
-        findViewById(R.id.lg).setOnClickListener(this);
-        findViewById(R.id.dell).setOnClickListener(this);
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -51,9 +42,6 @@ public class OpportunitiesActivity extends Activity implements View.OnClickListe
     }
 
     public void onClick(View v) {
-        //if(v.getId() == R.id.google) {
-            Intent i = new Intent(this, OpportunityActivity.class);
-            startActivity(i);
-        //}
+
     }
 }

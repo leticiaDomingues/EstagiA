@@ -14,6 +14,13 @@ public class EventsActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events);
 
+        //set up click listeners
+        findViewById(R.id.spotify).setOnClickListener(this);
+        findViewById(R.id.itau).setOnClickListener(this);
+        findViewById(R.id.raccoon).setOnClickListener(this);
+        findViewById(R.id.monitora).setOnClickListener(this);
+        findViewById(R.id.motorola).setOnClickListener(this);
+        findViewById(R.id.ibm).setOnClickListener(this);
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -42,6 +49,7 @@ public class EventsActivity extends Activity implements View.OnClickListener {
     }
 
     public void onClick(View v) {
-
+        Intent i = new Intent(this, EventActivity.class);
+        startActivity(i);
     }
 }

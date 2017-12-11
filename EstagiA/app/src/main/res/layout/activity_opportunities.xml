@@ -1,13 +1,198 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/txtRecoverPassword"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="1">
+    <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Oportunidades"/>
+        android:layout_height="fill_parent" >
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1">
+            <TextView
+                android:id="@+id/txtOpportunities"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:text="@string/opportunities_item"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:textSize="25sp"/>
 
-</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:paddingBottom="30dp">
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/google"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgGoogle"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/logo_google" />
+                    <TextView
+                        android:id="@+id/txtGoogleInfo"
+                        android:layout_width="130dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="Processo seletivo da Google iniciado blablalba"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/apple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/imgApple"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/logo_apple"/>
+                    <TextView
+                        android:id="@+id/txtAppleInfo"
+                        android:layout_width="130dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="Processo seletivo da Apple iniciado blablalba"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:paddingBottom="30dp">
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/microsoft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgMicrosoft"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/logo_microsoft" />
+                    <TextView
+                        android:id="@+id/txtRaccoonInfo"
+                        android:layout_width="130dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="Processo seletivo da Microsoft iniciado blablalba"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/amazon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/imgAmazon"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/logo_amazon"/>
+                    <TextView
+                        android:id="@+id/txtAmazonInfo"
+                        android:layout_width="130dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="Processo seletivo da Amazon iniciado blablalba"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:paddingBottom="30dp">
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/lg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgLg"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/logo_lg" />
+                    <TextView
+                        android:id="@+id/txtLgInfo"
+                        android:layout_width="130dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="Processo seletivo da LG iniciado blablalba"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/dell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/imgDell"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/logo_dell"/>
+                    <TextView
+                        android:id="@+id/txtIbmInfo"
+                        android:layout_width="130dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="Processo seletivo da Dell iniciado blablalba"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </GridLayout>
+    </ScrollView>
+</GridLayout>

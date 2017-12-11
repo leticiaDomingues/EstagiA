@@ -1,12 +1,198 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/txtRecoverPassword"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="1">
+    <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Eventos"/>
-</LinearLayout>
+        android:layout_height="fill_parent" >
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1">
+            <TextView
+                android:id="@+id/txtEvents"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:text="@string/events_item"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:textSize="25sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:paddingBottom="30dp">
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/spotify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgSpotify"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/logo_spotify" />
+                    <TextView
+                        android:id="@+id/txtSpotifyInfo"
+                        android:layout_width="130dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="Palestra Spotify no auditório 1 blablablla"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/itau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/imgItau"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/logo_itau"/>
+                    <TextView
+                        android:id="@+id/txtItauInfo"
+                        android:layout_width="130dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="Palestra Itaú no auditório 1 blablablla"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:paddingBottom="30dp">
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/raccoon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgRaccoon"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/logo_raccoon" />
+                    <TextView
+                        android:id="@+id/txtRaccoonInfo"
+                        android:layout_width="130dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="Palestra Raccoon no auditório 1 blablablla"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/monitora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/imgMonitora"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/logo_monitora"/>
+                    <TextView
+                        android:id="@+id/txtMonitoraInfo"
+                        android:layout_width="130dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="Palestra Monitora no auditório 1 blablablla"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:paddingBottom="30dp">
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/motorola"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgMotorola"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/logo_motorola" />
+                    <TextView
+                        android:id="@+id/txtMotorolaInfo"
+                        android:layout_width="130dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="Palestra Motorola no auditório 1 blablablla"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/ibm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/imgIbm"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/logo_ibm"/>
+                    <TextView
+                        android:id="@+id/txtIbmInfo"
+                        android:layout_width="130dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="Palestra IBM no auditório 1 blablablla"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </GridLayout>
+    </ScrollView>
+</GridLayout>
