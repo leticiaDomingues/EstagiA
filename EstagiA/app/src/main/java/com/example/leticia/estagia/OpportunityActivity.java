@@ -34,10 +34,22 @@ public class OpportunityActivity extends Activity implements View.OnClickListene
                 startActivity(new Intent(this, EventsActivity.class));
                 return true;
             case R.id.exit:
+                MyDB.ra = "";
                 startActivity(new Intent(this, MainActivity.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
+        }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        //if the user is not logged in
+        if(MyDB.ra.equals("")) {
+            //display the main activity
+            startActivity(new Intent(this, MainActivity.class));
         }
     }
 
