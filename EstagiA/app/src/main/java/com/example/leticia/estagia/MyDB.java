@@ -13,7 +13,7 @@ public class MyDB {
             //add the 4 users the system starts with
             MyDB.addUser(new User("Leticia", "551724", "BCC", "leticia@mail.com", "senha", false));
             MyDB.addUser(new User("Marcelo", "111111", "BCC", "marcelo@mail.com", "senha", false));
-            MyDB.addUser(new User("Jorge", "222222", "BCC", "jorge@mail.com", "senha", false));
+            MyDB.addUser(new User("Jorge", "551678", "BCC", "jorge@mail.com", "senha", false));
             MyDB.addUser(new User("Juliano", "333333", "BCC", "juliano@mail.com", "senha", false));
         }
     }
