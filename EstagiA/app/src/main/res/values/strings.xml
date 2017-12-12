@@ -2,7 +2,7 @@
     <string name="app_name">EstagiA</string>
     <string name="login_button">Login</string>
     <string name="signup_button">Cadastrar</string>
-    <string name="ra_cpf_label">R.A. ou CPF</string>
+    <string name="ra_cpf_label">R.A.</string>
     <string name="password_label">Senha</string>
     <string name="name_label">Nome completo</string>
     <string name="ra_label">R.A.</string>

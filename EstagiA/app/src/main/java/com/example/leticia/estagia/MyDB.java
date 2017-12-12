@@ -31,7 +31,7 @@ public class MyDB {
             return users.get(ra);
         return null;
     }
-    public void updateUser(User user) {
+    public static void updateUser(User user) {
         users.remove(user.getRA());
         users.put(user.getRA(), user);
     }
