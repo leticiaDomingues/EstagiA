@@ -12,34 +12,53 @@
             android:paddingRight="30dp"
             android:paddingTop="30dp">
             <ImageView
-                android:id="@+id/imgGoogle"
+                android:id="@+id/imgLogo"
                 android:layout_width="fill_parent"
                 android:layout_height="140dp"
+                android:layout_marginTop="10dp"
                 android:src="@drawable/logo_google" />
             <TextView
-                android:id="@+id/txtGoogle"
+                android:id="@+id/txtNome"
                 android:layout_width="fill_parent"
                 android:layout_height="45dp"
                 android:gravity="center"
                 android:textSize="20sp"
-                android:layout_below="@id/imgGoogle"
+                android:layout_below="@id/imgLogo"
                 android:text="Google"/>
             <TextView
-                android:id="@+id/txtGoogleInfo"
+                android:id="@+id/txtLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_below="@id/txtNome"
+                android:text="Local: blabla"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/txtData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_below="@id/txtLocal"
+                android:text="Inscrições até dia 10/10/10"/>
+            <TextView
+                android:id="@+id/txtDescricao"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:layout_below="@id/txtGoogle"
+                android:layout_below="@id/txtData"
                 android:text="@string/google_info"
                 android:layout_marginTop="10dp"/>
             <Button
                 android:id="@+id/btnCadastrar"
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
+                android:background="@drawable/button_shape"
+                android:textColor="#FFFFFF"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/txtGoogleInfo"
+                android:layout_below="@id/txtDescricao"
                 android:layout_marginTop="20dp"
                 android:layout_alignParentRight="true"
-                android:text="Inscrever" />
+                android:layout_marginBottom="20dp"
+                android:text="Me inscrever" />
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>
