@@ -18,13 +18,26 @@
         android:gravity="center"
         android:layout_marginBottom="5dp"
         android:textSize="25sp"/>
+        <ImageView
+            android:id="@+id/imgPerfil"
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:gravity = "center"
+            android:layout_below="@id/myProfileLabel" />
+    <Button
+        android:id="@+id/Galeria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/Galeria"
+        android:layout_below="@id/imgPerfil"/>
     <TextView
         android:id="@+id/profileInfoLabel"
         android:layout_width="fill_parent"
         android:layout_height="40dp"
         android:gravity="center"
         android:text="@string/profile_info_label"
-        android:layout_below="@id/myProfileLabel"/>
+        android:layout_below="@id/Galeria"/>
 
     <EditText
         android:id="@+id/txtNome"
@@ -192,6 +205,7 @@
             android:layout_below="@id/txtSpotifyInfo"
             android:text="Palestra Itaú no auditório 1 blablablla"
             android:layout_alignParentRight="true"/>
+
     </RelativeLayout>
 </ScrollView>
 </RelativeLayout>
