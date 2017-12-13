@@ -20,10 +20,6 @@ import android.widget.TextView;
 
 
 public class MyProfileActivity extends Activity implements View.OnClickListener {
-    private static final int SELECT_PICTURE = 1;
-    Uri selectedImagePath;
-    private ImageView hImagePerfil;
-    private Button hButton;
 
     @SuppressLint("ResourceType")
     @Override
