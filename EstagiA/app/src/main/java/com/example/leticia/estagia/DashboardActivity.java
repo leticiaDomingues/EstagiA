@@ -22,6 +22,10 @@ public class DashboardActivity extends Activity implements View.OnClickListener 
         findViewById(R.id.apple).setOnClickListener(this);
         findViewById(R.id.daitan).setOnClickListener(this);
         findViewById(R.id.raccoon).setOnClickListener(this);
+        findViewById(R.id.spotify).setOnClickListener(this);
+        findViewById(R.id.itau).setOnClickListener(this);
+        findViewById(R.id.monitora).setOnClickListener(this);
+        findViewById(R.id.ibm).setOnClickListener(this);
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -88,6 +92,30 @@ public class DashboardActivity extends Activity implements View.OnClickListener 
             Intent i = new Intent(this, OpportunityActivity.class);
             Bundle extraInfo = new Bundle();
             extraInfo.putString("empresa", "Raccoon");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        } else if(v.getId() == R.id.spotify) {
+            Intent i = new Intent(this, EventActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "Spotify");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        } else if(v.getId() == R.id.itau) {
+            Intent i = new Intent(this, EventActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "Itaú");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        } else if(v.getId() == R.id.monitora) {
+            Intent i = new Intent(this, EventActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "Monitora");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        } else if(v.getId() == R.id.ibm) {
+            Intent i = new Intent(this, EventActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "IBM");
             i.putExtras(extraInfo);
             startActivity(i);
         }

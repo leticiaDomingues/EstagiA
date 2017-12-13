@@ -89,5 +89,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:background="@drawable/button_shape"
+        android:textColor="#FFFFFF"
         android:text="@string/send_request_button" />
 </LinearLayout>
