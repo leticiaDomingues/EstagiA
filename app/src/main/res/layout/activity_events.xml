@@ -42,10 +42,16 @@
                     <TextView
                         android:id="@+id/txtSpotifyInfo"
                         android:layout_width="130dp"
-                        android:layout_height="70dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="Palestra Spotify no auditório 1 blablablla"/>
+                        android:text="Palestra Spotify - Compressão de Áudio"/>
+                    <TextView
+                        android:id="@+id/txtSpotifyDate"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="12/12/2018"/>
                 </LinearLayout>
 
                 <Space
@@ -66,10 +72,16 @@
                     <TextView
                         android:id="@+id/txtItauInfo"
                         android:layout_width="130dp"
-                        android:layout_height="70dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="Palestra Itaú no auditório 1 blablablla"/>
+                        android:text="Palestra Itaú - Surgimento das Criptomoedas"/>
+                    <TextView
+                        android:id="@+id/txtItauDate"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="23/04/2018"/>
                 </LinearLayout>
                 <Space
                     android:layout_width="wrap_content"
@@ -101,10 +113,16 @@
                     <TextView
                         android:id="@+id/txtRaccoonInfo"
                         android:layout_width="130dp"
-                        android:layout_height="70dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="Palestra Raccoon no auditório 1 blablablla"/>
+                        android:text="Palestra Raccon - Crescimento do Marketing Digital"/>
+                    <TextView
+                        android:id="@+id/txtRaccoonDate"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="25/03/2018"/>
                 </LinearLayout>
 
                 <Space
@@ -125,10 +143,17 @@
                     <TextView
                         android:id="@+id/txtMonitoraInfo"
                         android:layout_width="130dp"
-                        android:layout_height="70dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="Palestra Monitora no auditório 1 blablablla"/>
+                        android:text="Palestra Monitora - Machine Learning"/>
+                    <TextView
+                        android:id="@+id/txtMonitoraDate"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="13/03/2018"/>
+
                 </LinearLayout>
                 <Space
                     android:layout_width="wrap_content"
@@ -159,10 +184,16 @@
                     <TextView
                         android:id="@+id/txtMotorolaInfo"
                         android:layout_width="130dp"
-                        android:layout_height="70dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="Palestra Motorola no auditório 1 blablablla"/>
+                        android:text="Palestra Motorola - Mundo Mobile"/>
+                    <TextView
+                        android:id="@+id/txtMotorolaDate"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="09/03/2018"/>
                 </LinearLayout>
 
                 <Space
@@ -183,10 +214,16 @@
                     <TextView
                         android:id="@+id/txtIbmInfo"
                         android:layout_width="130dp"
-                        android:layout_height="70dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
-                        android:text="Palestra IBM no auditório 1 blablablla"/>
+                        android:text="Palestra IBM - Watson e o Futuro"/>
+                    <TextView
+                        android:id="@+id/txtIbmDate"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="28/08/2018"/>
                 </LinearLayout>
                 <Space
                     android:layout_width="wrap_content"

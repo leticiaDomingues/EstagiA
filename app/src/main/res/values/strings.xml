@@ -21,6 +21,7 @@
     <string name="events_item">Eventos</string>
     <string name="student_dashboard_item">Minha dashboard</string>
     <string name="exit_item">Sair</string>
+    <string name="calendar_btn">Adicionar ao calendário</string>
     <string name="google_info">Google\'s software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We\'re looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.
         As a key member of a small and versatile team, you design, test, deploy and maintain software solutions.
     </string>
@@ -29,4 +30,46 @@
 Whatever you’re studying, we have all kinds of internships to suit you – summer, thesis, academic and co-op. Take your pick.
 
 Or, if you’ve just finished your studies, keep checking here to find grad and trainee opportunities.</string>
+    <string name="apple_info">At Apple, interns are an important part of the team. Whether you sign on for a summer internship or a co-op during the academic year, you can work on critical projects, in the U.S. and around the world. As part of the Apple community, you’ll get a unique perspective on our process and those who lead it. See individual listings to learn about specific internships.</string>
+    <string name="dell_info">Why Work at Dell?
+
+Endless challenges and rewards. Opportunities on six continents. A team of colleagues fueled by collaboration. All this, and a company deeply committed to integrity and responsibility.
+
+Our applications primarily use Angular single page applications on the front-end and Java/Spring Boot microservices on the back-end.  Working together within creative, cooperative, highly skilled development squads, you will:
+
+-Join the team in a hands-on role and use modern development methodologies, specifically Test-Driven-Development and Continuous Delivery
+-Collaborate to help refine our business requirements and evolve our cloud application platform
+-Demonstrate a keen sense of urgency and shared ownership of our products
+-Be delighted you choose Dell EMC</string>
+    <string name="microsoft_info">At Microsoft, our interns work on projects that matter – and your team will rely on your skills and insights to help deliver those projects to market. You’ll get the opportunity to work on real projects and have fun along the way. This is your chance to show off your skills and work on cutting-edge technology. We offer internships in all job families and product areas. Imagine yourself as a Microsoft intern. Join Microsoft today, and help us shape the business of tomorrow.</string>
+    <string name="amazon_info">At Amazon, Interns are valuable contributors on projects that directly impact the experience for our customers.
+
+We\'re an innovative and fast-paced workplace; there is ample opportunity for you to work on complex and challenging problems that can impact millions of Amazon customers. Our internship program is a great way to explore working at Amazon and gain hands-on experience across different disciplines.
+
+To help support our interns\' growth and ability to deliver on projects, we offer them robust training modules, on-the-job and experiential learning methods, guided mentorship, and a senior leader presentation series. The University Programs Team also hosts multiple events during the internship cycle.
+
+Through our diverse internship opportunities for Engineering, Non-Technical Undergraduate Degree, and MBA and Advanced Degree students, we nurture a set of high potential individuals who often go on to become an integral part of Amazon\'s future!</string>
+    <string name="lg_info">LG Electronics Alabama, Inc. (LGEAI) is the home of Customer Service for all LG products purchased in the United States. Within LGEAI, we have multiple departments including Customer Contact Centers, Mobile Communications Repair Center (located in Fort Worth, Texas), Field Support (Factory Repair Technicians that perform in home repairs), Service Parts Distribution Center, Technical Support, Business Support (B2B), and several other supportive departments. We have positions located throughout the United States, with our Service Headquarters located in Huntsville, AL. Our common goal as an organization is to provide a level of customer service that goes above and beyond our customers’ needs and expectations.</string>
+    <string name="motorola_info">Motorola marcou um evento para às 10h do dia 24 de agosto deste ano em São Paulo. O convite enviado à imprensa não traz nenhuma informação extra, mas mostra uma mulher falando ao telefone. Não há como saber ao certo qual aparelho se trata, portanto fica difícil cravar qual será o protagonista da apresentação.
+Contudo, as possibilidades não são tão grandes assim e ficam basicamente restritas a três (ou quatro) possibilidades: Moto X4, Moto Z2 Force ou Moto G5S/G5S Plus. Tirando o Moto X4, os outros dois já foram anunciados lá fora, o que faz deles as principais apostas para o evento do dia 24. Mas não dá para dispensar a possibilidade de a Motorola apresentar a aguardada nova geração do Moto X também.</string>
+    <string name="spotify_event_info">Spotify is set to host its first ever live music event in the UK this November at London’s Alexandra Palace. Who We Be Live promises to be a celebration of the best of urban, grime and hip hop from the UK and beyond, all under one roof, inspired by the Spotify playlist which features the very best in Rap and Grime.
+
+The event, which takes place on Thursday 30th November at the iconic north London venue, will see some of the biggest names in urban music performing in front of some of their greatest fans on Spotify.
+
+Who We Be is curated by Spotify’s in-house urban music team, led by Senior Editor, Austin Daboh, and is one of Spotify’s most listened-to playlists in the UK, with over 140,000 followers. The event will bring to the stage some of Who We Be’s most popular and exciting urban artists: Bugzy Malone, Cardi B, Dizzee Rascal, Giggs, J Hus and Stefflon Don, who between them have had over half a billion streams on Spotify.</string>
+    <string name="itau_info">A 37ª edição do programa Ocupação homenageia essa trajetória, apresentando os métodos, as referências e os principais conceitos mobilizados por Nise: o afeto como disparador da cura, os animais como terapeutas, o contato com os materiais como aprendizado fundamental. A mostra conta com obras do Museu de Imagens do Inconsciente, criado por Nise, além de documentos e entrevistas com pessoas próximas à sua obra.
+Durante todo o período da exibição da mostra, a Ocupação Nise da Silveira reserva, no piso térreo do Itaú Cultural, um espaço onde o público pode fazer experimentações livres em desenho — uma das técnicas adotadas pela médica em suas terapias.</string>
+    <string name="raccoon_info">a última quarta-feira (18), André Palis, sócio-fundador e diretor comercial da Raccoon liderou a discussão sobre como novas tecnologias como Inteligência Artificial, Realidade Virtual e Aumentada, e muitas outras vão impactar o futuro do Marketing Digital na Synapses Session do CMO Strategic Advisory Board, realizado pelo Enterprise Business Development and Information (EBDI).</string>
+    <string name="monitora_info">Empresa de manutenção de aeronaves, solicitou à Monitora um aplicativo para reduzir o custo do processo de registro de avarias internas de aeronaves.
+
+Nesse caso, o mecânico utiliza o app pelo smartphone com conexão wi-fi para fotografar e enviar as fotos. Desse modo, o relatório é gerado automaticamente e enviado para o engenheiro responsável, em forma de documento.
+
+Com isso, foi economizado duas horas de todo o processo, como também reduziu, significativamente, os erros dos relatórios enviados.</string>
+    <string name="ibm_info">Empresa de manutenção de aeronaves, solicitou à Monitora um aplicativo para reduzir o custo do processo de registro de avarias internas de aeronaves.
+
+Nesse caso, o mecânico utiliza o app pelo smartphone com conexão wi-fi para fotografar e enviar as fotos. Desse modo, o relatório é gerado automaticamente e enviado para o engenheiro responsável, em forma de documento.
+
+Com isso, foi economizado duas horas de todo o processo, como também reduziu, significativamente, os erros dos relatórios enviados.</string>
+
+    
 </resources>

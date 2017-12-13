@@ -43,7 +43,6 @@ public class SignUpActivity extends Activity implements View.OnClickListener {
             extraInfo.putString("senha", senha);
             extraInfo.putString("curso", curso);
             i.putExtras(extraInfo);
-
             startActivity(i);
         }
 

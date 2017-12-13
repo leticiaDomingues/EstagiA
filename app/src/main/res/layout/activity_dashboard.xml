@@ -10,4 +10,11 @@
         android:layout_height="140dp"
         android:src="@drawable/logo_estagia" />
 
+    <Button
+        android:id="@+id/btnAddCalendarEvent"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/calendar_btn"
+        android:layout_marginTop="18dp"/>
+
 </LinearLayout>

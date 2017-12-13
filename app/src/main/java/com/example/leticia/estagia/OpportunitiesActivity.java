@@ -51,9 +51,41 @@ public class OpportunitiesActivity extends Activity implements View.OnClickListe
     }
 
     public void onClick(View v) {
-        //if(v.getId() == R.id.google) {
-            Intent i = new Intent(this, OpportunityActivity.class);
-            startActivity(i);
-        //}
+        Intent i = new Intent(this, OpportunityActivity.class) ;
+        switch (v.getId()){
+            case R.id.google:
+                i.putExtra("imgSrc","@drawable/logo_google");
+                i.putExtra("txtTitle","Google");
+                i.putExtra("txtBody","@string/google_info");
+                break;
+            case R.id.amazon:
+                i.putExtra("imgSrc", "@drawable/logo_amazon");
+                i.putExtra("txtTitle","Amazon");
+                i.putExtra("txtBody","@string/amazon_info");
+                break;
+            case R.id.apple:
+                i.putExtra("imgSrc", "@drawable/logo_apple");
+                i.putExtra("txtTitle","Apple");
+                i.putExtra("txtBody","@string/apple_info");
+                break;
+            case R.id.dell:
+                i.putExtra("imgSrc", "@drawable/logo_dell");
+                i.putExtra("txtTitle","Dell");
+                i.putExtra("txtBody","@string/dell_info");
+                break;
+            case R.id.microsoft:
+                i.putExtra("imgSrc", "@drawable/logo_microsoft");
+                i.putExtra("txtTitle","Microsoft");
+                i.putExtra("txtBody","@string/microsoft_info");
+                break;
+            case R.id.lg:
+                i.putExtra("imgSrc", "@drawable/logo_lg");
+                i.putExtra("txtTitle","LG");
+                i.putExtra("txtBody","@string/lg_info");
+                break;
+            default:
+                i.putExtra("imgSrc","@drawable/logo_google");
+        }
+        startActivity(i);
     }
 }
