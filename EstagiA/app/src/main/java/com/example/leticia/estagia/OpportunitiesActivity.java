@@ -19,10 +19,10 @@ public class OpportunitiesActivity extends Activity implements View.OnClickListe
         //set up click listeners
         findViewById(R.id.google).setOnClickListener(this);
         findViewById(R.id.apple).setOnClickListener(this);
+        findViewById(R.id.daitan).setOnClickListener(this);
+        findViewById(R.id.raccoon).setOnClickListener(this);
         findViewById(R.id.microsoft).setOnClickListener(this);
-        findViewById(R.id.amazon).setOnClickListener(this);
-        findViewById(R.id.lg).setOnClickListener(this);
-        findViewById(R.id.dell).setOnClickListener(this);
+        findViewById(R.id.cpqd).setOnClickListener(this);
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -63,9 +63,42 @@ public class OpportunitiesActivity extends Activity implements View.OnClickListe
     }
 
     public void onClick(View v) {
-        //if(v.getId() == R.id.google) {
+        if(v.getId() == R.id.google) {
             Intent i = new Intent(this, OpportunityActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "Google");
+            i.putExtras(extraInfo);
             startActivity(i);
-        //}
+        } else if(v.getId() == R.id.apple) {
+            Intent i = new Intent(this, OpportunityActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "Apple");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        } else if(v.getId() == R.id.daitan) {
+            Intent i = new Intent(this, OpportunityActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "Daitan");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        } else if(v.getId() == R.id.raccoon) {
+            Intent i = new Intent(this, OpportunityActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "Raccoon");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        } else if(v.getId() == R.id.microsoft) {
+            Intent i = new Intent(this, OpportunityActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "Microsoft");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        } else if(v.getId() == R.id.cpqd) {
+            Intent i = new Intent(this, OpportunityActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "CPqD");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        }
     }
 }

@@ -17,10 +17,10 @@ public class EventsActivity extends Activity implements View.OnClickListener {
         //set up click listeners
         findViewById(R.id.spotify).setOnClickListener(this);
         findViewById(R.id.itau).setOnClickListener(this);
-        findViewById(R.id.raccoon).setOnClickListener(this);
         findViewById(R.id.monitora).setOnClickListener(this);
-        findViewById(R.id.motorola).setOnClickListener(this);
         findViewById(R.id.ibm).setOnClickListener(this);
+        findViewById(R.id.motorola).setOnClickListener(this);
+        findViewById(R.id.amazon).setOnClickListener(this);
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -61,7 +61,42 @@ public class EventsActivity extends Activity implements View.OnClickListener {
     }
 
     public void onClick(View v) {
-        Intent i = new Intent(this, EventActivity.class);
-        startActivity(i);
+        if(v.getId() == R.id.spotify) {
+            Intent i = new Intent(this, EventActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "Spotify");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        } else if(v.getId() == R.id.itau) {
+            Intent i = new Intent(this, EventActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "Itaú");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        } else if(v.getId() == R.id.monitora) {
+            Intent i = new Intent(this, EventActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "Monitora");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        } else if(v.getId() == R.id.ibm) {
+            Intent i = new Intent(this, EventActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "IBM");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        } else if(v.getId() == R.id.amazon) {
+            Intent i = new Intent(this, EventActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "Amazon");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        } else if(v.getId() == R.id.motorola) {
+            Intent i = new Intent(this, EventActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "Motorola");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        }
     }
 }

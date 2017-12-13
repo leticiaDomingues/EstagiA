@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 
 public class SignUpActivity extends Activity implements View.OnClickListener {
@@ -34,22 +35,21 @@ public class SignUpActivity extends Activity implements View.OnClickListener {
         String confirmacaoSenha = ((EditText)findViewById(R.id.txtConfirmacaoSenha)).getText().toString();
 
         if(!nome.equals("") && !ra.equals("") && !email.equals("") && !senha.equals("") && !confirmacaoSenha.equals("")) {
-            Intent i = new Intent(this, SignUpActivity.class);
-
-            Bundle extraInfo = new Bundle();
-            extraInfo.putString("nome", nome);
-            extraInfo.putString("ra", ra);
-            extraInfo.putString("email", email);
-            extraInfo.putString("senha", senha);
-            extraInfo.putString("curso", curso);
-            i.putExtras(extraInfo);
-
-            startActivity(i);
+            if(senha.equals(confirmacaoSenha)) {
+                if(MyDB.getUser(ra) == null) {
+                    User user = new User(nome, ra, curso, email, senha, false);
+                    MyDB.addUser(user);
+                    MyDB.ra = ra;
+                    startActivity(new Intent(this, DashboardActivity.class));
+                } else {
+                    Toast.makeText(context, "RA já existente na base de dados.", Toast.LENGTH_SHORT).show();
+                }
+            } else {
+                Toast.makeText(context, "A senha deve ser igual a confirmação de senha.", Toast.LENGTH_SHORT).show();
+            }
+        } else {
+            Toast.makeText(context, "Preencha todos os campos.", Toast.LENGTH_SHORT).show();
         }
-
-        //display the main activity
-        Intent i = new Intent(this, DashboardActivity.class);
-        startActivity(i);
     }
 
     public void onRadioButtonClicked(View view) {

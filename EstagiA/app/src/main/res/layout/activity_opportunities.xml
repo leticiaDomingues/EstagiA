@@ -40,12 +40,27 @@
                         android:layout_height="65dp"
                         android:src="@drawable/logo_google" />
                     <TextView
-                        android:id="@+id/txtGoogleInfo"
+                        android:id="@+id/txtGoogleNome"
                         android:layout_width="130dp"
-                        android:layout_height="70dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
                         android:gravity="center"
-                        android:text="Processo seletivo da Google iniciado blablalba"/>
+                        android:textSize="20sp"
+                        android:text="Google"/>
+                    <TextView
+                        android:id="@+id/txtGoogleLocal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="São Paulo"/>
+                    <TextView
+                        android:id="@+id/txtGoogleData"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="20/01/2018"/>
                 </LinearLayout>
 
                 <Space
@@ -64,12 +79,27 @@
                         android:layout_height="65dp"
                         android:src="@drawable/logo_apple"/>
                     <TextView
-                        android:id="@+id/txtAppleInfo"
+                        android:id="@+id/txtAppleNome"
                         android:layout_width="130dp"
-                        android:layout_height="70dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
                         android:gravity="center"
-                        android:text="Processo seletivo da Apple iniciado blablalba"/>
+                        android:textSize="20sp"
+                        android:text="Apple"/>
+                    <TextView
+                        android:id="@+id/txtAppleLocal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="São Paulo"/>
+                    <TextView
+                        android:id="@+id/txtAppleData"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="31/12/2017"/>
                 </LinearLayout>
                 <Space
                     android:layout_width="wrap_content"
@@ -77,6 +107,94 @@
                     android:layout_weight="1" />
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:paddingBottom="30dp">
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/daitan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgDaitan"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/logo_daitan" />
+                    <TextView
+                        android:id="@+id/txtDaitanNome"
+                        android:layout_width="130dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="Daitan"/>
+                    <TextView
+                        android:id="@+id/txtDaitanLocal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="Campinas"/>
+                    <TextView
+                        android:id="@+id/txtDaitanData"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="31/01/2018"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/raccoon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/imgRaccoon"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/logo_raccoon"/>
+                    <TextView
+                        android:id="@+id/txtRaccoonNome"
+                        android:layout_width="130dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="Raccoon"/>
+                    <TextView
+                        android:id="@+id/txtRaccoonLocal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="São Carlos"/>
+                    <TextView
+                        android:id="@+id/txtRaccoonData"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="15/01/2018"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -99,12 +217,27 @@
                         android:layout_height="75dp"
                         android:src="@drawable/logo_microsoft" />
                     <TextView
-                        android:id="@+id/txtRaccoonInfo"
+                        android:id="@+id/txtMicrosoftName"
                         android:layout_width="130dp"
-                        android:layout_height="70dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
                         android:gravity="center"
-                        android:text="Processo seletivo da Microsoft iniciado blablalba"/>
+                        android:textSize="20sp"
+                        android:text="Microsoft"/>
+                    <TextView
+                        android:id="@+id/txtMicrosoftLocal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="São Paulo"/>
+                    <TextView
+                        android:id="@+id/txtMicrosofData"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="01/01/2018"/>
                 </LinearLayout>
 
                 <Space
@@ -112,81 +245,38 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1" />
                 <LinearLayout
-                    android:id="@+id/amazon"
+                    android:id="@+id/cpqd"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
                     android:orientation="vertical"
                     android:gravity="center">
                     <ImageView
-                        android:id="@+id/imgAmazon"
+                        android:id="@+id/imgCpqd"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:src="@drawable/logo_amazon"/>
+                        android:src="@drawable/logo_cpqd"/>
                     <TextView
-                        android:id="@+id/txtAmazonInfo"
+                        android:id="@+id/txtCpqdNome"
                         android:layout_width="130dp"
-                        android:layout_height="70dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
                         android:gravity="center"
-                        android:text="Processo seletivo da Amazon iniciado blablalba"/>
-                </LinearLayout>
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:orientation="horizontal"
-                android:paddingBottom="30dp">
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-                <LinearLayout
-                    android:id="@+id/lg"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-
-                    <ImageView
-                        android:id="@+id/imgLg"
-                        android:layout_width="65dp"
-                        android:layout_height="65dp"
-                        android:src="@drawable/logo_lg" />
+                        android:textSize="20sp"
+                        android:text="CPqD"/>
                     <TextView
-                        android:id="@+id/txtLgInfo"
+                        android:id="@+id/txtCpqdLocal"
                         android:layout_width="130dp"
-                        android:layout_height="70dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Processo seletivo da LG iniciado blablalba"/>
-                </LinearLayout>
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-                <LinearLayout
-                    android:id="@+id/dell"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-                    <ImageView
-                        android:id="@+id/imgDell"
-                        android:layout_width="65dp"
-                        android:layout_height="65dp"
-                        android:src="@drawable/logo_dell"/>
+                        android:textSize="13sp"
+                        android:text="Campinas"/>
                     <TextView
-                        android:id="@+id/txtIbmInfo"
+                        android:id="@+id/txtCpqdData"
                         android:layout_width="130dp"
-                        android:layout_height="70dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Processo seletivo da Dell iniciado blablalba"/>
+                        android:textSize="13sp"
+                        android:text="02/02/2018"/>
                 </LinearLayout>
                 <Space
                     android:layout_width="wrap_content"

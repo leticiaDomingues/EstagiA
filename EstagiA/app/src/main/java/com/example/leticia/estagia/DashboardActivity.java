@@ -15,6 +15,17 @@ public class DashboardActivity extends Activity implements View.OnClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
+        findViewById(R.id.txtVerMaisEventos).setOnClickListener(this);
+        findViewById(R.id.txtVerMaisOportunidades).setOnClickListener(this);
+
+        findViewById(R.id.google).setOnClickListener(this);
+        findViewById(R.id.apple).setOnClickListener(this);
+        findViewById(R.id.daitan).setOnClickListener(this);
+        findViewById(R.id.raccoon).setOnClickListener(this);
+        findViewById(R.id.spotify).setOnClickListener(this);
+        findViewById(R.id.itau).setOnClickListener(this);
+        findViewById(R.id.monitora).setOnClickListener(this);
+        findViewById(R.id.ibm).setOnClickListener(this);
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -55,6 +66,58 @@ public class DashboardActivity extends Activity implements View.OnClickListener 
     }
 
     public void onClick(View v) {
-
+        if(v.getId() == R.id.txtVerMaisEventos) {
+            startActivity(new Intent(this, EventsActivity.class));
+        } else if(v.getId() == R.id.txtVerMaisOportunidades) {
+            startActivity(new Intent(this, OpportunitiesActivity.class));
+        } else if(v.getId() == R.id.google) {
+            Intent i = new Intent(this, OpportunityActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "Google");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        } else if(v.getId() == R.id.apple) {
+            Intent i = new Intent(this, OpportunityActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "Apple");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        } else if(v.getId() == R.id.daitan) {
+            Intent i = new Intent(this, OpportunityActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "Daitan");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        } else if(v.getId() == R.id.raccoon) {
+            Intent i = new Intent(this, OpportunityActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "Raccoon");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        } else if(v.getId() == R.id.spotify) {
+            Intent i = new Intent(this, EventActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "Spotify");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        } else if(v.getId() == R.id.itau) {
+            Intent i = new Intent(this, EventActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "Itaú");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        } else if(v.getId() == R.id.monitora) {
+            Intent i = new Intent(this, EventActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "Monitora");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        } else if(v.getId() == R.id.ibm) {
+            Intent i = new Intent(this, EventActivity.class);
+            Bundle extraInfo = new Bundle();
+            extraInfo.putString("empresa", "IBM");
+            i.putExtras(extraInfo);
+            startActivity(i);
+        }
     }
 }

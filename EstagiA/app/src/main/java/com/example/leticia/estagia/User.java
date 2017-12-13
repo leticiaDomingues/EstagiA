@@ -30,6 +30,9 @@ public class User {
     public String getRA() { return ra; }
     public String getEmail() { return email; }
     public String getSenha() { return senha; }
+    public void setEmail(String email) { this.email = email; }
+    public void setSenha(String senha) { this.senha = senha; }
+    public void setCurso(String curso) { this.curso = curso; }
 
     public boolean isAdmin() { return admin; }
 

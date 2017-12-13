@@ -1,13 +1,412 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:gravity="center"
-    android:layout_height="match_parent">
-
-    <ImageView
+    android:layout_height="wrap_content"
+    android:columnCount="1">
+    <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="140dp"
-        android:src="@drawable/logo_estagia" />
+        android:layout_height="fill_parent" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1">
+            <TextView
+                android:id="@+id/txtOpportunities"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:text="@string/opportunities_item"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:textSize="25sp"/>
 
-</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:paddingBottom="30dp">
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/google"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgGoogle"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/logo_google" />
+                    <TextView
+                        android:id="@+id/txtGoogleNome"
+                        android:layout_width="130dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="Google"/>
+                    <TextView
+                        android:id="@+id/txtGoogleLocal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="São Paulo"/>
+                    <TextView
+                        android:id="@+id/txtGoogleData"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="20/01/2018"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/apple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/imgApple"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/logo_apple"/>
+                    <TextView
+                        android:id="@+id/txtAppleNome"
+                        android:layout_width="130dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="Apple"/>
+                    <TextView
+                        android:id="@+id/txtAppleLocal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="São Paulo"/>
+                    <TextView
+                        android:id="@+id/txtAppleData"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="31/12/2017"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:paddingBottom="30dp">
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/daitan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgDaitan"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/logo_daitan" />
+                    <TextView
+                        android:id="@+id/txtDaitanNome"
+                        android:layout_width="130dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="Daitan"/>
+                    <TextView
+                        android:id="@+id/txtDaitanLocal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="Campinas"/>
+                    <TextView
+                        android:id="@+id/txtDaitanData"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="31/01/2018"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/raccoon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/imgRaccoon"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/logo_raccoon"/>
+                    <TextView
+                        android:id="@+id/txtRaccoonNome"
+                        android:layout_width="130dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="Raccoon"/>
+                    <TextView
+                        android:id="@+id/txtRaccoonLocal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="São Carlos"/>
+                    <TextView
+                        android:id="@+id/txtRaccoonData"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="15/01/2018"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtVerMaisOportunidades"
+                android:layout_width="fill_parent"
+                android:text="Ver mais"
+                android:gravity="right"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="5dp"/>
+        </GridLayout>
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1">
+            <TextView
+                android:id="@+id/txtEvents"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:text="@string/events_item"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:textSize="25sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:paddingBottom="30dp">
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/spotify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgSpotify"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/logo_spotify" />
+                    <TextView
+                        android:id="@+id/txtSpotifyNome"
+                        android:layout_width="130dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="Spotify"/>
+                    <TextView
+                        android:id="@+id/txtSpotifyLocal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="Auditório DC"/>
+                    <TextView
+                        android:id="@+id/txtSpotifyData"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="15/12/2017"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/itau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/imgItau"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/logo_itau"/>
+                    <TextView
+                        android:id="@+id/txtItauNome"
+                        android:layout_width="130dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="Itaú"/>
+                    <TextView
+                        android:id="@+id/txtItauLocal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="Bento Prado Jr"/>
+                    <TextView
+                        android:id="@+id/txtItauData"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="14/12/2017"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:paddingBottom="30dp">
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/monitora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgMonitora"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/logo_monitora" />
+                    <TextView
+                        android:id="@+id/txtMonitoraNome"
+                        android:layout_width="130dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="Monitora"/>
+                    <TextView
+                        android:id="@+id/txtMonitoraLocal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="Lab II DC"/>
+                    <TextView
+                        android:id="@+id/txtMonitoraData"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="17/12/2017"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/ibm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/imgIbm"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/logo_ibm"/>
+                    <TextView
+                        android:id="@+id/txtIbmNome"
+                        android:layout_width="130dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="IBM"/>
+                    <TextView
+                        android:id="@+id/txtIbmLocal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="Auditório DC"/>
+                    <TextView
+                        android:id="@+id/txtIbmData"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="16/12/2017"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtVerMaisEventos"
+                android:layout_width="fill_parent"
+                android:text="Ver mais"
+                android:gravity="right"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="20dp"/>
+        </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+</GridLayout>

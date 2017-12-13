@@ -40,12 +40,27 @@
                         android:layout_height="65dp"
                         android:src="@drawable/logo_spotify" />
                     <TextView
-                        android:id="@+id/txtSpotifyInfo"
+                        android:id="@+id/txtSpotifyNome"
                         android:layout_width="130dp"
-                        android:layout_height="70dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
                         android:gravity="center"
-                        android:text="Palestra Spotify no auditório 1 blablablla"/>
+                        android:textSize="20sp"
+                        android:text="Spotify"/>
+                    <TextView
+                        android:id="@+id/txtSpotifyLocal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="Auditório DC"/>
+                    <TextView
+                        android:id="@+id/txtSpotifyData"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="15/12/2017"/>
                 </LinearLayout>
 
                 <Space
@@ -64,12 +79,27 @@
                         android:layout_height="65dp"
                         android:src="@drawable/logo_itau"/>
                     <TextView
-                        android:id="@+id/txtItauInfo"
+                        android:id="@+id/txtItauNome"
                         android:layout_width="130dp"
-                        android:layout_height="70dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
                         android:gravity="center"
-                        android:text="Palestra Itaú no auditório 1 blablablla"/>
+                        android:textSize="20sp"
+                        android:text="Itaú"/>
+                    <TextView
+                        android:id="@+id/txtItauLocal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="Bento Prado Jr"/>
+                    <TextView
+                        android:id="@+id/txtItauData"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="14/12/2017"/>
                 </LinearLayout>
                 <Space
                     android:layout_width="wrap_content"
@@ -82,31 +112,6 @@
                 android:layout_height="200dp"
                 android:orientation="horizontal"
                 android:paddingBottom="30dp">
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-                <LinearLayout
-                    android:id="@+id/raccoon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-
-                    <ImageView
-                        android:id="@+id/imgRaccoon"
-                        android:layout_width="65dp"
-                        android:layout_height="65dp"
-                        android:src="@drawable/logo_raccoon" />
-                    <TextView
-                        android:id="@+id/txtRaccoonInfo"
-                        android:layout_width="130dp"
-                        android:layout_height="70dp"
-                        android:layout_marginTop="15dp"
-                        android:gravity="center"
-                        android:text="Palestra Raccoon no auditório 1 blablablla"/>
-                </LinearLayout>
-
                 <Space
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -117,52 +122,34 @@
                     android:layout_height="fill_parent"
                     android:orientation="vertical"
                     android:gravity="center">
+
                     <ImageView
                         android:id="@+id/imgMonitora"
                         android:layout_width="65dp"
                         android:layout_height="65dp"
-                        android:src="@drawable/logo_monitora"/>
+                        android:src="@drawable/logo_monitora" />
                     <TextView
-                        android:id="@+id/txtMonitoraInfo"
+                        android:id="@+id/txtMonitoraNome"
                         android:layout_width="130dp"
-                        android:layout_height="70dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
                         android:gravity="center"
-                        android:text="Palestra Monitora no auditório 1 blablablla"/>
-                </LinearLayout>
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:orientation="horizontal"
-                android:paddingBottom="30dp">
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-                <LinearLayout
-                    android:id="@+id/motorola"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-
-                    <ImageView
-                        android:id="@+id/imgMotorola"
-                        android:layout_width="65dp"
-                        android:layout_height="65dp"
-                        android:src="@drawable/logo_motorola" />
+                        android:textSize="20sp"
+                        android:text="Monitora"/>
                     <TextView
-                        android:id="@+id/txtMotorolaInfo"
+                        android:id="@+id/txtMonitoraLocal"
                         android:layout_width="130dp"
-                        android:layout_height="70dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Palestra Motorola no auditório 1 blablablla"/>
+                        android:textSize="13sp"
+                        android:text="Lab II DC"/>
+                    <TextView
+                        android:id="@+id/txtMonitoraData"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="17/12/2017"/>
                 </LinearLayout>
 
                 <Space
@@ -181,12 +168,115 @@
                         android:layout_height="65dp"
                         android:src="@drawable/logo_ibm"/>
                     <TextView
-                        android:id="@+id/txtIbmInfo"
+                        android:id="@+id/txtIbmNome"
                         android:layout_width="130dp"
-                        android:layout_height="70dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
                         android:gravity="center"
-                        android:text="Palestra IBM no auditório 1 blablablla"/>
+                        android:textSize="20sp"
+                        android:text="IBM"/>
+                    <TextView
+                        android:id="@+id/txtIbmLocal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="Auditório DC"/>
+                    <TextView
+                        android:id="@+id/txtIbmData"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="16/12/2017"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:paddingBottom="30dp">
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/amazon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgAmazon"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/logo_amazon" />
+                    <TextView
+                        android:id="@+id/txtAmazonNome"
+                        android:layout_width="130dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="Amazon"/>
+                    <TextView
+                        android:id="@+id/txtAmazonLocal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="Auditório DC"/>
+                    <TextView
+                        android:id="@+id/txtAmazonDAta"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="20/12/2017"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:id="@+id/motorola"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/imgMotorola"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/logo_motorola"/>
+                    <TextView
+                        android:id="@+id/txtMotorolaNome"
+                        android:layout_width="130dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="Motorola"/>
+                    <TextView
+                        android:id="@+id/txtMotorolaLocal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="Bento Prado Jr"/>
+                    <TextView
+                        android:id="@+id/txtMotorolaData"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="21/12/2017"/>
                 </LinearLayout>
                 <Space
                     android:layout_width="wrap_content"
