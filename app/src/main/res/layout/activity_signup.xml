@@ -2,7 +2,94 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
+    android:gravity="center"
     android:layout_height="fill_parent">
 
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/signup_button"
+        android:layout_marginBottom="50dp"
+        android:textSize="25sp"/>
 
+    <EditText
+        android:id="@+id/txtNome"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/name_label"
+        android:lines="1"
+        android:textSize="15sp"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/txtRa"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/ra_label"
+        android:lines="1"
+        android:textSize="15sp"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/email_label"
+        android:lines="1"
+        android:textSize="15sp"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/txtSenha"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password_label"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:textSize="15sp"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/txtConfirmacaoSenha"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password_confirmation_label"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:textSize="15sp"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"/>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+        <RadioButton android:id="@+id/radio_bcc"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/bcc_radio"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_enc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enc_radio"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnSendRequest"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_shape"
+        android:textColor="#FFFFFF"
+        android:text="@string/send_request_button" />
 </LinearLayout>

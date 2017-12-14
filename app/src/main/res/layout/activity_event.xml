@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="30dp">
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="fill_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo_spotify" />
+            <TextView
+                android:id="@+id/txtNome"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_below="@id/imgLogo"
+                android:text="Spotify"/>
+            <TextView
+                android:id="@+id/txtLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_below="@id/txtNome"
+                android:text="Local: blabla"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/txtData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_below="@id/txtLocal"
+                android:text="10/10/10"/>
+            <TextView
+                android:id="@+id/txtDescricao"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_below="@id/txtData"
+                android:text="@string/spotify_info"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/btnCadastrar"
+                android:layout_width="fill_parent"
+                android:background="@drawable/button_shape"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDescricao"
+                android:layout_marginTop="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20dp"
+                android:text="Me inscrever" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
